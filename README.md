@@ -1,6 +1,6 @@
 # A complete pipeline for BraTS 2021: [RSNA-ASNR-MICCAI Brain Tumor Segmentation (BraTS) Challenge 2021 ](https://www.med.upenn.edu/cbica/brats2021/)
 
-This repository implement the solution of the 2021 edition of the BraTS challenge. 
+This repository implement the solution of the 2021 edition of the BraTS challenge describe in our [paper][brats2021]. 
 
 If you face any problem, please feel free to open an issue.
 
@@ -202,6 +202,7 @@ sudo docker run -it --rm --gpus device=0 --name run_model -v "/data/RSNA_ASNR_MI
 
 If you find this repository useful for your research, please cite our work
 * Carré, A., Deutsch, E., Robert, C. (2022). [Automatic Brain Tumor Segmentation with a Bridge-Unet Deeply Supervised Enhanced with Downsampling Pooling Combination, Atrous Spatial Pyramid Pooling, Squeeze-and-Excitation and EvoNorm.][brats2021] In: Crimi, A., Bakas, S. (eds) Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries. BrainLes 2021. Lecture Notes in Computer Science, vol 12963. Springer, Cham. https://doi.org/10.1007/978-3-031-09002-8_23
+* Henry, T. et al. (2021). [Brain Tumor Segmentation with Self-ensembled, Deeply-Supervised 3D U-Net Neural Networks: A BraTS 2020 Challenge Solution.][brats2020] In: Crimi, A., Bakas, S. (eds) Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries. BrainLes 2020. Lecture Notes in Computer Science(), vol 12658. Springer, Cham. https://doi.org/10.1007/978-3-030-72084-1_30
 
 BibTeX:
 ```
@@ -216,10 +217,26 @@ BibTeX:
 	publisher = {Springer International Publishing},
 	author = {Carré, Alexandre and Deutsch, Eric and Robert, Charlotte},
 	editor = {Crimi, Alessandro and Bakas, Spyridon},
-	date = {2022},
-	langid = {english},
+	year = {2022},
+	language = {en},
 	keywords = {Brain tumor, Deep-learning, Segmentation},
+}
+@inproceedings{henryBrain2021,
+	location = {Cham},
+	title = {Brain Tumor Segmentation with Self-ensembled, Deeply-Supervised 3D U-Net Neural Networks: A BraTS 2020 Challenge Solution},
+	isbn = {978-3-030-72084-1},
+	doi = {10.1007/978-3-030-72084-1_30},
+	series = {Lecture Notes in Computer Science},
+	pages = {327--339},
+	booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+	publisher = {Springer International Publishing},
+	author = {Henry, Théophraste and Carré, Alexandre and Lerousseau, Marvin and Estienne, Théo and Robert, Charlotte and Paragios, Nikos and Deutsch, Eric},
+	editor = {Crimi, Alessandro and Bakas, Spyridon},
+	year = {2021},
+	language = {en},
+	keywords = {Brain tumor, Deep learning, Semantic segmentation},
 }
 ```
 
 [brats2021]: https://link.springer.com/chapter/10.1007/978-3-031-09002-8_23
+[brats2020]: https://link.springer.com/chapter/10.1007/978-3-030-72084-1_30
